@@ -26,8 +26,8 @@ const diarySchema = z.object({
 export type BlogSchema = z.infer<typeof blogSchema>;
 export type diarySchema = z.infer<typeof blogSchema>;
 const blogCollection = defineCollection({ schema: blogSchema });
-const diaryCollection = defineCollection({ schema: blogSchema });
+const diaryCollection = defineCollection({ schema: diarySchema });
 export const collections = {
   'blog': blogCollection,
-  'diary': blogCollection,
+  'diary': diaryCollection,
 }
