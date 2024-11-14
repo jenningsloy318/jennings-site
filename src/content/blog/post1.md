@@ -19,6 +19,13 @@ quisque sagittis purus sit amet.
 
 $$ \int_0^\infty = \frac{1}{x^2+1} \;dx=\frac{\pi}{2} $$
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
 quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
 Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
