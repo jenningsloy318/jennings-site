@@ -18,16 +18,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout the code
         uses: actions/checkout@v4
-      - name: Install dependencies
+      - name: Install playwright dependencies
         run: |
               npx playwright install-deps
-      - name: Setup
+      - name: Setup playwright
         run: |
               yarn install
               npx playwright install
-      - name: Install, build, and upload your site output
+      - name: build the site
         uses: withastro/action@v2
         with:
            path: .
