@@ -20,6 +20,13 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+              npx playwright install-deps
+      - name: Setup
+        run: |
+              yarn install
+              npx playwright install
       - name: Install, build, and upload your site output
         uses: withastro/action@v2
         with:
