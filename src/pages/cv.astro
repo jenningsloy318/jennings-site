@@ -9,11 +9,20 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  I am now a DevOps engineer, experienced in Docker/kubernetes, CI/CD, jenkins and automation, also has multiple years of Linux administration.
   </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>DevOps (CI/CD/Jenkins/groovy/git) - 8 years+</li>
+    <li>Solaris/Linux - 12 years+</li>
+    <li>OpenStack/AWS/VMWare - 10 years+</li>
+    <li>Docker/Kubernetes - 8 years+</li>
+    <li>programming (golang/python/shell/Ansible/Terraform) - 6 years+</li>
+  </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -21,12 +30,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Bachelor's degree in Electronic science and technology"
+      subtitle="[2004] to [2008] at [University of Electronic Science and Technology of China], [Chengdu], [China]"
     />
   </div>
 
@@ -36,57 +41,104 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="DevOps Engineer"
+      subtitle="From [Jul 2012] to [Nov 2016] at [TD SYNNEX, Inc], [Chengdu], [China]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Design and implement DevOps CI/CD pipelines for MaCo product</li>
+        <li>Setup multi-node kubernetes cluster on OpenStack/AWS for CI/CD</li>
+        <li>Design and deliver private cloud for 3 customers to support SportsOne</li>
+        <li>Setup the full stack monitoring systems with Prometheus/grafana</li>
+        <li>Monitoring and troubleshooting for infrastructure and pipelines</li>
+        <li>Manage user authn/authz for all infrastructure and services</li>
+      </li>
+    </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
+      title="Linux System administrator"
       subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Manage virtualization infrastructure</li>
+        <li>Management SAN storage systems</li>
+        <li>Configure and maintain Linux VMs</li>
+        <li>Automate the configurations for applications such as Nginx, LDAP, and Tomcat</li>
+        <li>Monitor the infrastructure and applications</li>
+        <li>Security Hardening for all VMs and services</li>
+        <li>Deploy applications with Python, shell, and Ansible</li>
+        <li>Implement BCP program annually</li>
+      </ul>
     </TimeLineElement>
   </div>
 
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="MaCo CI/CD pipelines"
+      subtitle="From [Aug 2020] to [present] "
+    >
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>Setup and improve the CI/CD pipelines to build, test, deliver, and deploy for all MaCo applications</li>
+      <li>Implement automatic scan via Sonar/CheckMarx/BlackDuck/WhiteSource to improve code quality and security</li>
+      <li>Plan and manage all authz/authn access for all infrastructure and services</li>
+      <li>Deploy applications with canary/green-blue strategy</li>
+      <li>Design and implement new application to deliver cloud integration artifacts</li>
+    </ul>
+    </TimeLineElement>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Athena Data Processing"
+      subtitle="From [Oct 2021] to [Mar 2023] "
+    >
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>Design and implement pipelines for data science service</li>
+      <li>Use ArgoCD to deliver applications</li>
+    </ul>
+    </TimeLineElement>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Setup Kubernetes for production and testing CI/CD pipeline "
+      subtitle="From [Aug 2017] to [Mar 2018] "
+    >
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>setup multi-node cluster on openstack/ASW to facilitate CI/CD environment forEMS product</li>
+      <li>integrate Kubernetes into Jenkins as build agent for all CI/CD Tasks</li>
+      <li>unify the build/deployment/delivery process via kubernetes manifests and HELM</li>
+      <li>implement Monitoring solution with prometheus</li>
+      <li>integrate Istio for advance network management</li>
+    </ul>
+    </TimeLineElement>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="SportsOne Private Cloud design and implementation"
+      subtitle="From [Apr 2018] to [Aug 2019] "
+    >
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>Design private cloud solution for SportsOne solutions including network prototype, storage, security, and virtualization</li>
+      <li>Deliver the private cloud solution for 3 customers (Suning, Xinjiang, BSU)</li>
+      <li>Setup full monitoring system from hardware to virtualization to services using Prometheus</li>
+      <li>Implement IaC with Terraform and Ansible to automate VM and application provision</li>
+      <li>Develop various exporters used in Prometheus to scrape metrics from different endpoints</li>
+      <li>Manage HANA database HA cluster</li>
+      <li>Plan backup strategy and implement the backup solution</li>
+      <li>Create monthly monitoring report</li>
+    </ul>
+    </TimeLineElement>
+  </div>
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank"> RHCE 5, Issued by RedHat, Inc.</a>
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
 </BaseLayout>
